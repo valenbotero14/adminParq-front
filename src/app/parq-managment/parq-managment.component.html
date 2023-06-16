@@ -1,0 +1,28 @@
+<p>parq-managment works!</p>
+
+<h2>Crear Vehiculo</h2>
+
+<form [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="plate">Placa: </label>
+        <input type="text" id="plate" formControlName="plate">
+    </div> 
+
+    <div>
+        <label for="vehicleType">Tipo Vehiculo: </label>
+        <input type="text" id="vehicleType" formControlName="vehicleType">
+    </div> 
+
+    <div>
+        <label for="wheels">Llantas: </label>
+        <input type="number" id="wheels" formControlName="wheels">
+    </div>
+
+    <div>
+        <label for="electric">Electrico?: </label>
+        <input type="checkbox" id="electric" formControlName="electric">
+    </div>
+
+    <button type="submit">Crear</button>
+
+</form>
